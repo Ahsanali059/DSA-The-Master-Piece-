@@ -13,7 +13,7 @@ public class quickSort
             return;
         }
 
-        int partitionIndex = partition(arr, start, end);
+        int partitionIndex = partition(arr, start, end);// partition
         quickSort(arr, start, partitionIndex - 1);
         quickSort(arr, partitionIndex + 1, end);
     }
