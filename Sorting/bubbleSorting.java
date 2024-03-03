@@ -1,5 +1,14 @@
 package Sorting;
 
+
+
+/*
+ * time Complixity 
+ *        O(N^2) time
+ * space Complicity is
+ *        O(1)
+ * 
+ */
 public class bubbleSorting 
 {
     public static void bubbleSort(int []arr)
