@@ -5,6 +5,8 @@ package Sorting;
  * Defination:Selection sorting method select the minimum value 
  * or the maximum value and place in the correct position
  * 
+ * time complexity ->O(n^2)
+ * Space complecity ->O(1)
  */
 public class selectionSorting 
 {
