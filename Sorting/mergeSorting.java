@@ -1,5 +1,16 @@
 package Sorting;
 
+
+/*
+ * Time Complexity ->O(log n)
+ * space complexity ->O(n)
+ * Auxiliary Space: Merge Sort requires additional space for the temporary storage of elements during the merge operation. This additional space is proportional to the size of the array being sorted.
+
+   Recursion Stack Space: Merge Sort is a recursive algorithm. Each recursive call consumes stack space for storing local variables, parameters, and return addresses. Since Merge Sort splits the array into halves recursively until it reaches the base case, the maximum depth of the recursion tree is log n. At each level of the recursion tree, O(n) space is required for merging the subarrays. Therefore, the total space complexity due to the recursion stack is also O(n).
+
+ *
+ * 
+ */
 public class mergeSorting 
 {
    public static void mergeSort(int []arr)
