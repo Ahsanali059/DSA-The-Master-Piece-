@@ -19,9 +19,7 @@ public class sortMatrix
 
             }
         }
-
-
-
+        
         //print 
         while(!result.isEmpty())
         {
