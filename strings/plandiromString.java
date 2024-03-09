@@ -4,13 +4,7 @@ public class plandiromString
 {
     public static boolean isPalindrome(String s)
     {
-        if(reversedString(s)==s)
-            return true;
-
-        else 
-        {
-            return false;
-        }  
+        return reversedString(s).equals(s); 
     }
 
     public static String reversedString(String s)
