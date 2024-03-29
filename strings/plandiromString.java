@@ -12,8 +12,7 @@ public class plandiromString
         char[] c = s.toCharArray();
         int left = 0;
         int right = c.length - 1;
-
-
+        
         while(left < right)
         {
             char temp = c[left];
@@ -23,13 +22,8 @@ public class plandiromString
             right--;
 
         }
-
         return new String(c);
     }
-
-
-
-
     public static void main(String[] args) 
     {
         String s = "1221";

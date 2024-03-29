@@ -4,7 +4,6 @@ public class PalindromeNumber {
         String strNumber = String.valueOf(number); // Convert number to string
         return isPalindromeHelper(strNumber);
     }
-
     private static boolean isPalindromeHelper(String str) {
         // Base case: if the length of the string is 0 or 1, it's a palindrome
         if (str.length() <= 1) {

@@ -4,6 +4,7 @@ public class findFact
 {
     public static int fact(int n)
     {
+        //Base case 
         if(n==1)
            return 1;
            

@@ -23,8 +23,13 @@ class Node
 
 
 
-public class bst 
+public class BinaryTree 
 {
+
+    /*
+     * Binary tree Level Order Traversal 
+     * 
+     */
     public static void levelOrderTraversal(Node root) {
         if (root == null)
             return;
@@ -115,19 +120,19 @@ public class bst
     {
         Node root = null;
 
-        root = bst.buildTree(root);
+        root = BinaryTree.buildTree(root);
         levelOrderTraversal(root);
 
 
         System.out.println("preOrder Traversal");
-        bst.preOrderTraversal(root);
+        BinaryTree.preOrderTraversal(root);
 
 
         System.out.println("InOrder Traversal");
-        bst.inOrderTraversal(root);
+        BinaryTree.inOrderTraversal(root);
 
         System.out.println("postOrder Traversal");
-        bst.postOrderTraversal(root);
+        BinaryTree.postOrderTraversal(root);
 
         
     }
