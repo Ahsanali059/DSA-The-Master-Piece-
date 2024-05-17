@@ -40,9 +40,8 @@ public class Graph
         return adjacencyList.get(vertex);
     }
 
-    /*
+    /**
      * print graph
-     * 
      */
     public void printGraph()
     {

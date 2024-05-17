@@ -1,4 +1,4 @@
-package Tree;
+package tree;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -19,15 +19,11 @@ class Node
    } 
 
 }
-
-
-
-
 public class BinaryTree 
 {
 
     /*
-     * Binary tree Level Order Traversal 
+     * Binary tree Level Order Traversal    
      * 
      */
     public static void levelOrderTraversal(Node root) {

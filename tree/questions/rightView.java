@@ -1,4 +1,4 @@
-package Tree.questions;
+package tree.questions;
 
 import java.util.ArrayList;
 import java.util.Deque;

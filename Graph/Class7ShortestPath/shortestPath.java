@@ -7,7 +7,9 @@ public class shortestPath {
 
     public int findShortestPath(Map<Integer, List<Integer>> graph, int start, int end) {
         Set<Integer> visited = new HashSet<>();
+
         dfs(graph, start, end, 0, visited);
+
         if (shortestPathLength == Integer.MAX_VALUE) {
             return -1;
         } else {
