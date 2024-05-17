@@ -9,7 +9,7 @@ import java.util.Set;
 
 import class3_CycleDetection.CycleDetectionBfs;
 
-package Graph.class-6 hasCycle;
+
 
 public class hasCycleUsingBfs 
 {
