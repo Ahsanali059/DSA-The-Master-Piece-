@@ -58,9 +58,13 @@ class Graph
      */
     public void findBridge()
     {
+        //The discovery map is used to keep track of the discovery time of each vertex during the Depth-First Search (DFS) traversal of the graph. This discovery time is crucial for identifying bridges because it helps to determine the relative position of each vertex in the DFS traversal tree.
         Map<String,Integer> discovery = new HashMap<>();
+        
+        //low is the low of the time that is neighbor time 
         Map<String,Integer> low = new HashMap<>();
 
+        //map to store the parent of the Node 
         Map<String, String> parent = new HashMap<>();
         Set<String> visited = new HashSet<>();
 
@@ -72,6 +76,7 @@ class Graph
             parent.put(node, null);
         }
 
+        //which time you reaching a Node (steps) that is insertion 
         int []time = {0};
 
         for(String node:getNodes())
@@ -101,15 +106,22 @@ class Graph
 
             if(!visited.contains(v))
             {
-                parent.put(node, v);
+                //store the parent of Node 
+
+                parent.put(v, node);
+
                 findBridgesUtil(node, visited, discovery, low, parent, time);
 
 
                 low.put(node, Math.min(low.get(node), low.get(v)));
+
+                //if new low is graeter then prevois Low there is a Bridge 
                 if (low.get(v) > discovery.get(node)) {
                     System.out.println(node + " -- " + v + " is a bridge");
                 }
-            } else if (!v.equals(parent.get(node))) {
+            } 
+            else if (!v.equals(parent.get(node))) {
+                //If v is already visited and is not the parent of node, update the low value of node.
                 low.put(node, Math.min(low.get(node), discovery.get(v)));
             }
 
