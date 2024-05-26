@@ -58,7 +58,8 @@ class Graph
      */
     public void findBridge()
     {
-        //The discovery map is used to keep track of the discovery time of each vertex during the Depth-First Search (DFS) traversal of the graph. This discovery time is crucial for identifying bridges because it helps to determine the relative position of each vertex in the DFS traversal tree.
+        //The discovery time of a vertex is the time when the vertex is first visited during the DFS traversal.
+        //It helps to establish the order in which vertices are visited, which is essential for identifying the structure of the DFS tree. 
         Map<String,Integer> discovery = new HashMap<>();
         
         //low is the low of the time that is neighbor time 
