@@ -60,6 +60,11 @@ class minHeap
           heapifyUp(size - 1);
        }
 
+       //to maintain the binary tree property we use heapifyUp 
+       /*
+        * Heapify Up (also known as "Bubble Up" or "Percolate Up")
+        
+        */
        private void heapifyUp(int i) {
         while (i != 0 && heap[parent(i)] > heap[i]) {
             swap(i, parent(i));
@@ -71,12 +76,20 @@ class minHeap
             throw new IllegalStateException("Heap is empty");
         }
         int root = heap[0];
+
         heap[0] = heap[size - 1];
         size--;
         heapifyDown(0);
         return root;
     }
 
+    /**
+     * Heapify down is used when an element is removed from the heap (typically the root). 
+     * element in the heap is moved to the root position (to maintain the complete binary tree property), 
+     * and the heap property is restored by comparing the new root with its children and swapping if necessary.
+     * 
+     * @param i
+     */
     private void heapifyDown(int i) {
         int smallest = i;
         int left = leftChild(i);
