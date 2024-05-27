@@ -17,6 +17,7 @@ This means that every parent node is greater than or equal to its child nodes.
 properties of Heap:
 
 =>Heap is a complete binary tree exacept the possibility of last level filled from left to right 
+
 =>Heap property:In case of min heap each parent node is less then or equal to its child for max Heaps,each parent node is greater than or equal to its children.
 
 
