@@ -11,6 +11,11 @@ This means that every parent node is less than or equal to its child nodes.
 Max-Heap:
 
 The key at the root must be maximum among all keys present in the heap.
+=>Heap all work do in constant time 
+Max Heap =>Max element always on the root position 
+
+Min Heap =>Min element always root element  
+
 The same property must be recursively true for all nodes in the heap.
 This means that every parent node is greater than or equal to its child nodes.
 
