@@ -1,3 +1,10 @@
+=>min Heap may parent child say chota hona chiya 
+=>max heapp may parent child say barha hona chaiya 
+
+Create Heap time complexity => O(N)
+
+
+
 A heap is a specialized tree-based data structure that satisfies the heap property. Heaps are commonly used to implement priority queues, but they also have a wide range of other applications. There are two main types of heaps: min-heaps and max-heaps.
 
 Types of Heaps:
