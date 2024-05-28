@@ -6,6 +6,7 @@ public class HeapSort {
         int n = heap.length;
 
         // Build the heap and start from n/2-1 
+        //n/2 to n-1 is the leaf node 
         for (int i = n / 2 - 1; i >= 0; i--) {
             heapify(heap, n, i);
         }
