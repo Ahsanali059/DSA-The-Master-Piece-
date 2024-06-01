@@ -5,19 +5,18 @@ public class MinHeap {
     private int size;
     private int capacity;
 
-    public MinHeap(int capacity) {
+    public MinHeap(int capacity) 
+    {
         this.size = 0;
         this.capacity = capacity;
         this.heap = new int[capacity];
     }
-
     /**
      * Find the parent index
      */
     private int parent(int index) {
         return (index - 1) / 2;
     }
-
     /**
      * Find the left child index
      */
