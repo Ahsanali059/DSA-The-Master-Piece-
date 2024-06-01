@@ -34,6 +34,35 @@ public class listIteratorDemo
             System.out.println(num);
             
         }
+
+        System.out.println("Backford Traversal ");
+
+        while (listIterator.hasPrevious()) 
+        {
+            Integer num = listIterator.previous();
+            System.out.println(num);
+            
+        }
+
+
+        System.out.println("Modify the element ");
+
+        listIterator = numbers.listIterator(); // Reset iterator to the start
+        while (listIterator.hasNext()) 
+        {
+            Integer element = listIterator.next();
+
+            if(element==2)
+            {
+                listIterator.add(457);//add the new element 
+            }
+        }
+
+         // Print the modified list
+         System.out.println("Modified list:");
+         for (Integer number : numbers) {
+             System.out.println(number);
+         }
     }
     
 }
