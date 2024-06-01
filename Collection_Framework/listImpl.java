@@ -5,13 +5,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class listImpl {
+public class listImpl 
+{
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         List<Integer> duplicates = new ArrayList<>();
         Set<Integer> seen = new HashSet<>();
-
-    
+        
+        
         list.add(1);
         list.add(2);
         list.add(4);
