@@ -8,14 +8,7 @@
     time complexity : O(n): why? because we iterate through the string once.n is the length of the string.
     space complexity: O(n): why? because in worst case we might have to store all characters in the string in the stack. 
 
-
-
-
-
-
 */
-
-
 
 class Solution {
     public String removeDuplicates(String s) {
