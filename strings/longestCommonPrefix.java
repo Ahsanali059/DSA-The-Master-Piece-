@@ -1,5 +1,7 @@
 // In Java, charAt() returns character of any valid index position
 // substring() returns only the part of string from startIndex to endIndex that matched so far
+// Input: strs = ["flower","flow","flight"]
+// Output: "fl"
 class Solution {
     public String longestCommonPrefix(String[] strs) 
     {

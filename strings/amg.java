@@ -1,5 +1,8 @@
 package strings;
 
+// An Armstrong number (or strong number) for a three-digit number is a number that is equal to the sum of the cubes of its digits.
+// input: 153
+// output: YES
 public class amg 
 {
     public static boolean amgStrongNumbered(int x)
