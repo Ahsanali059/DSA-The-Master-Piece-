@@ -9,10 +9,7 @@ public class reverseArray
 
         while(leftPinter < rightPointer)
         {
-            System.out.println(leftPinter);
-            
-
-
+          
             int temp = arr[leftPinter];
             arr[leftPinter] = arr[rightPointer];
             arr[rightPointer] = temp;
