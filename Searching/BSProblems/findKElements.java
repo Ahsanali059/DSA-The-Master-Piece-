@@ -1,5 +1,10 @@
 package Searching.BSProblems;
 
+/*
+  Time Complexity: O(log n) why ? In each step we are reducing the search 
+  space to half.
+  Space Complexity: O(1) why ? No extra space is used.
+*/
 public class findKElements 
 {
     public static int kthElementFinder(int arr[],int target)

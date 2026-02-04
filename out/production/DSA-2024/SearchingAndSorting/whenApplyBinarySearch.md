@@ -1,0 +1,1 @@
+95 percent apply Binary Search when array is already sorted 

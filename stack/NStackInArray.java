@@ -1,58 +1,67 @@
 package stack;
 
-public class NStackInArray 
-{
-    private int[] array;      // The single array to hold all elements
-    private int[] top;        // Array to store the top index of each stack
-    private int[] next;       // Array to store the next available index in the array
-    private int free;          // Index of the next available free space in the array
+public class NStackInArray {
 
-    public NStackInArray(int numsOfStack,int capacity)
-    {
+    private int[] array;   // Stores actual elements
+    private int[] top;     // Stores top index of each stack
+    private int[] next;    // Next free or next element index
+    private int free;      // Head of free list
+
+    public NStackInArray(int numberOfStacks, int capacity) {
         array = new int[capacity];
-        top = new int[numsOfStack];
+        top = new int[numberOfStacks];
         next = new int[capacity];
-    // Initialize tops of all stacks as -1 (empty)
-    for(int i=0;i<numsOfStack;i++)
-    {
-        top[i] = -1;
+
+        // Initialize all stacks as empty
+        for (int i = 0; i < numberOfStacks; i++) {
+            top[i] = -1;
+        }
+
+        // Initialize free list
+        for (int i = 0; i < capacity - 1; i++) {
+            next[i] = i + 1;
+        }
+        next[capacity - 1] = -1;
+
+        free = 0;
     }
 
-    // Initialize next pointers
-    for (int i = 0; i < capacity-1; i++) 
-    {
-        next[i] = i+1;
-        
-    }
-    next[capacity-1] = -1;//indicate no next avaiable space 
-    free = 0;
     public void push(int stackNumber, int value) {
+        if (stackNumber < 0 || stackNumber >= top.length) {
+            System.out.println("Invalid Stack Number");
+            return;
+        }
+
         if (isFull()) {
             System.out.println("Stack Overflow");
             return;
         }
 
         int currentIndex = free;
-        free = next[currentIndex];  // Update the free pointer
+        free = next[currentIndex];
 
-        array[currentIndex] = value;  // Place the value in the array
-        next[currentIndex] = top[stackNumber];  // Update the next pointer to the previous top
-        top[stackNumber] = currentIndex;  // Update the top of the stack
+        array[currentIndex] = value;
+        next[currentIndex] = top[stackNumber];
+        top[stackNumber] = currentIndex;
     }
 
     public int pop(int stackNumber) {
-        if (isEmpty(stackNumber)) {
-            System.out.println("Stack Underflow");
-            return -1;  // Return a dummy value indicating underflow
+        if (stackNumber < 0 || stackNumber >= top.length) {
+            System.out.println("Invalid Stack Number");
+            return -1;
         }
 
-        int currentIndex = top[stackNumber];  // Get the current top index
-        int value = array[currentIndex];      // Get the value at the top index
+        if (isEmpty(stackNumber)) {
+            System.out.println("Stack Underflow");
+            return -1;
+        }
 
-        // Update pointers
-        top[stackNumber] = next[currentIndex];  // Move the top to the next available index
-        next[currentIndex] = free;              // Update the next pointer to the current free space
-        free = currentIndex;                    // Update the free pointer to the popped space
+        int currentIndex = top[stackNumber];
+        int value = array[currentIndex];
+
+        top[stackNumber] = next[currentIndex];
+        next[currentIndex] = free;
+        free = currentIndex;
 
         return value;
     }
@@ -66,22 +75,19 @@ public class NStackInArray
     }
 
     public static void main(String[] args) {
-        int numberOfStacks = 3;
-        int totalCapacity = 9;
+        NStackInArray stacks = new NStackInArray(3, 9);
 
-        NStackInArray nStacks = new NStackInArray(numberOfStacks, totalCapacity);
+        stacks.push(0, 1);
+        stacks.push(0, 2);
+        stacks.push(0, 3);
 
-        nStacks.push(0, 1);
-        nStacks.push(0, 2);
-        nStacks.push(0, 3);
+        stacks.push(1, 4);
+        stacks.push(1, 5);
 
-        nStacks.push(1, 4);
-        nStacks.push(1, 5);
+        stacks.push(2, 6);
 
-        nStacks.push(2, 6);
-
-        System.out.println("Popped from stack 0: " + nStacks.pop(0));
-        System.out.println("Popped from stack 1: " + nStacks.pop(1));
-        System.out.println("Popped from stack 2: " + nStacks.pop(2));
+        System.out.println("Popped from stack 0: " + stacks.pop(0));
+        System.out.println("Popped from stack 1: " + stacks.pop(1));
+        System.out.println("Popped from stack 2: " + stacks.pop(2));
     }
 }
