@@ -1,5 +1,22 @@
-package Searching.BSProblems;
+package Searching.CountOccurrenceInSortedArray.java;
 
+
+/**
+ * What is Binary Search Insert Position?
+    Given a sorted array and a target value, return the index if the target is found.
+    If not, return the index where it would be if it were inserted in order.
+    You may assume no duplicates in the array.
+    Time Complexity: O(log n) why ? In each step we are reducing the search
+    space to half.
+    Space Complexity: O(1) why ? No extra space is used.
+    Example:
+    Input: nums = [1,3,5,6], target = 5
+    Output: 2
+    Input: nums = [1,3,5,6], target = 2
+    Output: 1 : why ? because 2 is not present in the array but if we insert 2 in the array
+    at index 1 the array will be sorted
+ * 
+ */
 public class BinarySearchInsert 
 {
     public int searchInsert(int []nums, int x)

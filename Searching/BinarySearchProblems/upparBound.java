@@ -1,4 +1,4 @@
-package Searching.BSProblems;
+package Searching.CountOccurrenceInSortedArray.java;
 
 /**
     What is upper Bound ?

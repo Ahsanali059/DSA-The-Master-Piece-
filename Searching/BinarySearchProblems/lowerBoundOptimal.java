@@ -1,4 +1,4 @@
-package Searching.BSProblems;
+package Searching.CountOccurrenceInSortedArray.java;
 
 /*
     Time Complexity: O(log n) why ? In each step we are reducing the search 
