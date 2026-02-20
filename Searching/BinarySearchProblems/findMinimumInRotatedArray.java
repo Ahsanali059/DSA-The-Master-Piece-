@@ -21,7 +21,8 @@ public class findMinimumInRotatedArray
                 high = mid; // move the high pointer to mid
             }
         }
-        return nums[low]; // the minimum element will be at the low pointer
+        return nums[low]; // the minimum element will be at the low pointer 
+        // why ? because when low and high pointers are equal, they will point to the minimum element in the rotated sorted array
     }
     
 }
