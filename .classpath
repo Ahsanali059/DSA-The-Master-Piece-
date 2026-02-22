@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="Collection_Framework/collectionFrameworkIntro/|Graph/Khn&apos;s Algorithm/|strings/|Arrays/problems/|Graph/class1/|Arrays/TwoDArrays/|Graph/classSixHasCycleCheck/|Recursion/" kind="src" path=""/>
+	<classpathentry kind="src" path="Arrays/problems"/>
+	<classpathentry kind="src" path="Arrays/TwoDArrays"/>
+	<classpathentry kind="src" path="Collection_Framework/collectionFrameworkIntro"/>
+	<classpathentry kind="src" path="Graph/class1"/>
+	<classpathentry kind="src" path="Graph/classSixHasCycleCheck"/>
+	<classpathentry kind="src" path="Graph/Khn&apos;s Algorithm"/>
+	<classpathentry kind="src" path="Recursion"/>
+	<classpathentry kind="src" path="strings"/>
+	<classpathentry kind="output" path="out/production/Graph"/>
+</classpath>
