@@ -5,59 +5,50 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
-class rightView 
-{
-    List list = new ArrayList<>();
-    public List<Integer> rightSideView(Node root) 
-    {
-       //base case 
-       if(root==null)
-       {
-         return list; 
-       }
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode() {}
+    TreeNode(int val) { this.val = val; }
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
 
-       Deque<Node> deque = new LinkedList<Node>();
-       deque.add(root);
+class RightView {
+    public List<Integer> rightSideView(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
 
-       while(deque.size()>0)
-       {
-           int size = deque.size();
-           list.add(deque.peek().val);//add right part 
+        if (root == null)
+            return list;
 
-           while(size > 0 )
-           {
-              Node node = deque.poll();
-              if(node.right!=null)
-              {
-                deque.add(node.right);
-              }
-              if(node.left!=null)
-              {
-                deque.add(node.left);
-              }
+        Deque<TreeNode> deque = new LinkedList<>();
+        deque.add(root);
 
-              size--;
-           }
+        while (!deque.isEmpty()) {
+            int size = deque.size();
 
+            for (int i = 0; i < size; i++) {
+                TreeNode node = deque.poll();
 
-       } 
+                // Add the **last node** of current level
+                if (i == size - 1) {
+                    list.add(node.val);
+                }
 
-       return list;
-        
+                // Add children to queue (left first, then right)
+                if (node.left != null) {
+                    deque.add(node.left);
+                }
+                if (node.right != null) {
+                    deque.add(node.right);
+                }
+            }
+        }
+
+        return list;
     }
 }
