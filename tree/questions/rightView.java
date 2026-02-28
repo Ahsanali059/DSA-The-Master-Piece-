@@ -48,7 +48,6 @@ class RightView {
                 }
             }
         }
-
         return list;
     }
 }
