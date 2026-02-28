@@ -1,4 +1,4 @@
-package tree;
+package tree.Traversals;
 
 class TreeNode {
     int val;
