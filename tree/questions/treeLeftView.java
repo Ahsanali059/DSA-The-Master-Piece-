@@ -5,16 +5,18 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-class Node {
-    Node left;
-    Node right;
-    int data;
+/*
+  example:
+  
+          1
+         / \
+        2   4
+       / \
+      3   0
 
-    Node(int data) {
-        this.data = data;
-    }
-}
-
+    left view = [1, 2, 3]
+    right view = [1, 4, 0]
+*/
 public class TreeLeftView {
 
     public List<Integer> leftView(Node root) {
