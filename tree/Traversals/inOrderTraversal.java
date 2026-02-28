@@ -2,7 +2,6 @@ package tree.Traversals;
 
 import java.util.ArrayList;
 import java.util.List;
-import tree.TreeNode;
 
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
