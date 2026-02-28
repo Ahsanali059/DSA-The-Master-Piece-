@@ -13,7 +13,6 @@ package tree.questions;
     left view = [1, 2, 3]
     right view = [1, 4, 0]
 
-
 */
 public class TopView 
 {
