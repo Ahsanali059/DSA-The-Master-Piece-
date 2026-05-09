@@ -15,6 +15,48 @@ package tree.questions;
 
 public class BinaryTreeToDoublyLinkedList 
 {
+        static class Node {
+            int data;
+            Node left, right;
+    
+            Node(int data) {
+                this.data = data;
+            }
+        }
+    
+        public static Node bToDLL(Node root) {
+    
+            if (root == null)
+                return null;
+    
+            // Convert left subtree and link to root
+            if (root.left != null) {
+                Node left = bToDLL(root.left);
+    
+                // Find the rightmost node in left subtree
+                while (left.right != null)
+                    left = left.right;
+    
+                // Link the rightmost node of left subtree to root
+                left.right = root;
+                root.left = left;
+            }
+    
+            // Convert right subtree and link to root
+            if (root.right != null) {
+                Node right = bToDLL(root.right);
+    
+                // Find the leftmost node in right subtree
+                while (right.left != null)
+                    right = right.left;
+    
+                // Link the leftmost node of right subtree to root
+                right.left = root;
+                root.right = right;
+            }
+    
+            return root; // Return the head of the DLL
+        }
 
     
 }

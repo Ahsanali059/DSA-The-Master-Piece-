@@ -11,7 +11,7 @@ class Solution {
                 }
             }
         }
-        return new int[] {}; // no solution
+        return new int[] {}; // NO Solution
     }
 }
 
