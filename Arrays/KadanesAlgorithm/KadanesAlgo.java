@@ -4,15 +4,23 @@ public class KadanesAlgo
 {
     public static int findMaxSubArray(int[] arr)
     {
-        int currentElement = arr[0];
-        int maxElement = arr[0];
+        int sum = 0;
+        int maxi = Integer.MIN_VALUE;
 
         for (int i = 1; i < arr.length; i++)
         {
-            currentElement = Math.max(currentElement, arr[i]);
-            maxElement = Math.max(maxElement, currentElement);
+//            currentElement = Math.max(currentElement, arr[i]);
+//            maxElement = Math.max(maxElement, currentElement);
+
+            // Step 1: sum create karte ha
+            sum = sum + arr[i];
+            // Step 2: maxi update karte ha
+            maxi = Math.max(maxi, sum);
+            // Step 3: sum check karte h for negative value
+            if(sum<0)
+                sum = 0;
         }
-        return maxElement;
+        return maxi;
     }
 
     public static void main(String[] args) {
