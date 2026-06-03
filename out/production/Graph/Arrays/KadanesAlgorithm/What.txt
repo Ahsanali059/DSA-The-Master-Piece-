@@ -1,0 +1,18 @@
+Kadane's Algorithm find Maximum sum of a contiguous subarray
+
+Core Idea => At every Index you decide
+             "Should I Continue the current subArray OR start fresh from here"
+             -> If current sum becomes negative → drop it
+             -> Start new from current element
+Formula:
+
+currentSum = max(arr[i], currentSum + arr[i])
+maxSum = max(maxSum, currentSum)
+
+currentSum = max(arr[i], currentSum + arr[i]) ?
+
+// Start a new subarray from current element
+   → arr[i]
+// Continue previous subarray by adding current element
+   → currentSum + arr[i]
+   Then we take maximum of these two
