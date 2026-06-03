@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0866302b-a71c-4768-af82-e7a4655ec15b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/Arrays/sortZerosAndOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays/sortZerosAndOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graph/TopologicalSortUsingBfs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graph/TopologicalSortUsingBfs.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,33 +34,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.floorCeilFinder.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.sortZerosAndOne.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/DSA-The-Master-Piece-/Arrays&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.findUniqueElements.executor": "Run",
+    "Application.floorCeilFinder.executor": "Debug",
+    "Application.sortZerosAndOne.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/DSA-The-Master-Piece-/Arrays",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\DSA-The-Master-Piece-\Arrays" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.sortZerosAndOne">
+  <component name="RunManager" selected="Application.findUniqueElements">
+    <configuration name="findUniqueElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Arrays.findUniqueElements" />
+      <module name="DSA-2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="floorCeilFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Searching.BSProblems.floorCeilFinder" />
       <module name="DSA-2024" />
@@ -88,6 +103,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.findUniqueElements" />
         <item itemvalue="Application.sortZerosAndOne" />
         <item itemvalue="Application.floorCeilFinder" />
       </list>
@@ -113,7 +129,8 @@
       <workItem from="1778316167351" duration="2819000" />
       <workItem from="1778398862425" duration="868000" />
       <workItem from="1778957117261" duration="2831000" />
-      <workItem from="1780392812321" duration="7804000" />
+      <workItem from="1780392812321" duration="9078000" />
+      <workItem from="1780490483851" duration="1677000" />
     </task>
     <servers />
   </component>
