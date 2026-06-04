@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0866302b-a71c-4768-af82-e7a4655ec15b" name="Changes" comment="" />
+    <list default="true" id="0866302b-a71c-4768-af82-e7a4655ec15b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Searching/BinarySearchProblems/lowerBound.java" beforeDir="false" afterPath="$PROJECT_DIR$/Searching/BinarySearchProblems/lowerBound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graph/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graph/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +131,7 @@
       <workItem from="1778398862425" duration="868000" />
       <workItem from="1778957117261" duration="2831000" />
       <workItem from="1780392812321" duration="9078000" />
-      <workItem from="1780490483851" duration="6587000" />
+      <workItem from="1780490483851" duration="10557000" />
     </task>
     <servers />
   </component>

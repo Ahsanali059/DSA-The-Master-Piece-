@@ -2,9 +2,6 @@ package strings;
 
 public class isRotationOfAnotion 
 {
-
-    
-
     public static boolean isRotation(String str1, String str2)
     {
         //base case 
