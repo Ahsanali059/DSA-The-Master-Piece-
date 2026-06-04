@@ -1,4 +1,4 @@
-package Searching.CountOccurrenceInSortedArray.java;
+package Searching.BinarySearchProblems;
 
 /*
   What is lower Bound ?
