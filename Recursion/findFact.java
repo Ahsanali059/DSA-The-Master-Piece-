@@ -7,9 +7,10 @@ public class findFact
         //Base case 
         if(n==1)
            return 1;
-           
+
+        // Recursive condition
         int fact = n * fact(n-1); 
-        return fact;  
+        return fact;
     }
 
     public static void main(String[] args) 
