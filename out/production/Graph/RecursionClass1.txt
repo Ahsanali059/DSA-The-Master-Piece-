@@ -1,0 +1,3 @@
+-> Recursion ? : When a function call itself until a special condition meat this condition is know as Base condition.
+
+-> Infinite recursion call is know as stack overflow error.
