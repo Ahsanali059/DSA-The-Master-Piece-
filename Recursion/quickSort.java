@@ -56,5 +56,4 @@ public class quickSort
         sort(nums, low, end); // Left half pivot ka left wala elements
         sort(nums, start, high); // Right half pivot ka right wala elements
     }
-
 }
