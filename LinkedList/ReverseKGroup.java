@@ -1,5 +1,9 @@
 package LinkedList;
 
+/*
+Time Complexity: O(N)
+Space Complexity: O(N)
+ */
 public class ReverseKGroup
 {
     public static Node reverseKGroupElement(Node head, int k)
