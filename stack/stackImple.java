@@ -51,6 +51,11 @@ public class stackImple {
         System.out.println();
     }
 
+    public int getSize()
+    {
+        return size;
+    }
+
     public static void main(String[] args) {
         // stack contains two things: array, top, size
         stackImple st = new stackImple(2);

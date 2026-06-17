@@ -1,6 +1,6 @@
 package strings;
 
-public class isRotationOfAnotion 
+public class isRotationOfAnother
 {
     public static boolean isRotation(String str1, String str2)
     {
