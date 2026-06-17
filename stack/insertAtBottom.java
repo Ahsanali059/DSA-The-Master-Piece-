@@ -13,14 +13,12 @@ public class insertAtBottom
             return;
         }
 
-        //pop all the remainig elements 
-
+        //pop all the remaining elements and this all elements is stored inside temporary recursive stack then after insert in bottom we again insert this elements from this stack to original stack
         int top = stack.peek();
 
         insertAtBottomFuntion(stack, data);
 
-        //insert all removed elements 
-
+        //insert all removed elements
         stack.push(top);
     }
     
