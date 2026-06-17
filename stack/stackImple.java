@@ -63,8 +63,6 @@ public class stackImple {
         st.push(0);
         st.push(1);
 
-
-
         System.out.println("Peek Element is = "+st.peek());
 
         System.out.println("Size of Stack "+st.size);
