@@ -35,7 +35,7 @@ public class nextGreaterElement
 
             // stack.peek() <= arr[i] => means agar stack ka top element
             // current element sa chota ha tu ignore karo and pop kar do
-            if (!stack.isEmpty() && stack.peek() <= arr[i]) {
+            while (!stack.isEmpty() && stack.peek() <= arr[i]) {
                 stack.pop();
             }
 

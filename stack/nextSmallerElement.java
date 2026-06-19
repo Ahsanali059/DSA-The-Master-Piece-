@@ -5,23 +5,26 @@ import java.util.Stack;
 
 public class nextSmallerElement 
 {
-    public static int[] nextSmaller(int[] nums) {
+    public static int[] findNextSmaller(int[] nums) {
         int n = nums.length;
-        int[] result = new int[n];
-        Arrays.fill(result, -1);
+
+        int []result = new int[n];
 
         Stack<Integer> stack = new Stack<>();
 
-        for (int i = 0; i < 2 * n; i++) {
-            int index = i % n;
+        for (int i = n-1; i >= 0; i--) {
 
-            while (!stack.isEmpty() && nums[index] < nums[stack.peek()]) {
-                result[stack.pop()] = nums[index];
+            // stack.peek() <= arr[i] => means agar stack ka top element
+            // current element sa barha ha tu ignore karo and pop kar do
+            while (!stack.isEmpty() && stack.peek() >= nums[i]) {
+                stack.pop();
             }
 
-            if (i < n) {
-                stack.push(i);
-            }
+            // agar result nahi milta tu -1 insert karo do
+            result[i] = stack.isEmpty() ? -1 : stack.peek();
+
+            stack.push(nums[i]);
+
         }
 
         return result;
@@ -29,7 +32,7 @@ public class nextSmallerElement
 
     public static void main(String[] args) {
         int[] nums = {4, 2, 8, 6, 1, 5, 3};
-        int[] result = nextSmaller(nums);
+        int[] result = findNextSmaller(nums);
 
         System.out.println("Next Smaller Elements: " + Arrays.toString(result));
     }
